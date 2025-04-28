@@ -8,7 +8,7 @@ public class Student {
 	public double hight;
 	
 	//생성자 / 생성자부
-	
+	//===
 	//기능
 	public void student() {
 		System.out.println("공부를 합시다");
