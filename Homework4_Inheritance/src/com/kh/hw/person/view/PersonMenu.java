@@ -40,6 +40,12 @@ public class PersonMenu {
 	}
 	
 	public void studentMenu() {
+		System.out.println("학생 추가");
+		System.out.println("학생 보기");
+		System.out.println("메인으로");
+		System.out.print("메뉴번호");
+		int menu = sc.nextInt();
+		sc.nextInt();
 		
 	}
 	public void employeeMenu() {
