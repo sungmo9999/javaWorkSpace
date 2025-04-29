@@ -1,11 +1,55 @@
 package com.kh.chap01_befor.model.vo;
+             //자식            부모
 
-public class Desktop {
-	private String brand;
-	private String pCode;
-	private String pName;
-	private int price;
+public class Desktop extends product {
+	//private String brand;
+	//private String pCode;
+	//private String pName;
+	//private int price;
+	//private boolean allInOne;
 	private boolean allInOne;
+	
+	public Desktop(String brand, String pCode, String pName, int price, boolean allInOne) {
+		//super(); // 현재클래스의 부모 클래스의 주소값을 담고있는변수
+		         // super():부모클래스의 생성자 호출
+		//부모객체 내부의 필드값을 초기화 할 수있는방법
+		//1.부모클래스의 매개변수 생성자를 호출하여 필드 초기화
+		//super(brand, pCode, pName, price);//부모생성자는 항상 자식 생성자의 첫번쨰줄에 기술
+		
+		//2 부모클래스의 setter함수를 이용하여 초기화
+		super();
+		super.setBrand(brand);
+		this.setpName(pName);
+		setpName(pName);
+		setPrice(price);
+		
+		//3 부모클래스의 필드의 접근제한자를 protected로 변경하여 초기화
+		super.brand = brand;
+		super.pCode = pCode;
+		super.pName = pName;
+		super.price = price;
+		
+		
+		this.allInOne = allInOne;
+	}
+
+	public boolean isAllInOne() {
+		return allInOne;
+	}
+
+	public void setAllInOne(boolean allInOne) {
+		this.allInOne = allInOne;
+	}
+	
+	//오버라이딩: 부모클래스의 매소드를 자식클래스에서 변경하는 행위
+	public String information() {
+		return
+		//"brand: "+getBrand()+", pCode : "+pCode+", pName"+pName+", allInOne : "+allInOne;
+		super.information()+", allInOne : "+allInOne;
+		
+		
+	}
+	
 
 	/*
 	 * Tv desktop SmartPhone ....가전제품클래스들을 만들떄 마다.

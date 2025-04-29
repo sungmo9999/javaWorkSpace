@@ -9,6 +9,7 @@ public class Student {
 		
 	}
 	public Student(String name,String subject, int score) {
+		super();
 		this.name = name;
 		this.subject = subject;
 		this.score = score;
@@ -33,8 +34,8 @@ public class Student {
 		this.score = score;
 	}
 	
-	public String information() {
-		return name+" "+subject+" "+score;
+	public String inform() {
+		return "이름: "+name+" /과목 : "+subject+" /점수 :  "+score;
 	}
 	
 	
