@@ -21,6 +21,7 @@ public class SquareController {
 		
 	}
 	public String print() {
+		return "사각형"+s.information();
 		
 	}
 	
