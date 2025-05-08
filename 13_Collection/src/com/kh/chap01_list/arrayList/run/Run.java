@@ -82,6 +82,9 @@ public class Run {
 
 		//5. size() : 리스트에 초기화된 데이터의 수를 반환해주는 메서드
 		System.out.println("리스트에담긴 데이터의 수 : "+list3.size());
+		
+		//6. get(int index) : 인덱스 위치의 데이터를 반환해주는 메서드
+		
 	}
 	
 
