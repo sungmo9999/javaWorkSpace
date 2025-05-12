@@ -6,7 +6,7 @@ public class Lottery {
 	private String name;
 	private String phone;
 	
-	public Lottery() {
+	public Lottery() { 
 		
 	}
 

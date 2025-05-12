@@ -26,6 +26,7 @@ public class Book implements Serializable{
 		this.discount = discount;
 	}
 
+
 	public String getTitle() {
 		return title;
 	}
