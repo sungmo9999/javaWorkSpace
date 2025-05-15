@@ -28,7 +28,7 @@ public class Circle extends Point {
 		this.radius = radius;
 	}
 	public String toString() {
-		return super.toString()+", "+radius+",";
+		return super.toString()+", "+radius;
 	}
 	
 	

@@ -15,7 +15,7 @@ public class IPSearch {
 		
 	      
 		try {
-			InetAddress[] arr = InetAddress.getAllByName(str);
+			InetAddress arr[] = InetAddress.getAllByName(str);
 			 int count = arr.length;
 	            if (count > 0) {
 	                System.out.println(str + "는 " + count + "개의 IP주소를 가지고 있습니다.");

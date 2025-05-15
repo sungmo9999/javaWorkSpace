@@ -7,10 +7,8 @@ public class CircleController {
 	private String radius;
 	
 	
-	public String calcCircum(int x, int y, int radius) {
-		c.setX(x);
-		c.setY(y);
-		c.setRadius(radius);
+	public String calcArea(int x, int y, int radius) {
+		c = new Circle(x, y, radius);
 		
 		double result = Math.PI * radius *2;
 		return"둘레: "+c+" / " +result;
