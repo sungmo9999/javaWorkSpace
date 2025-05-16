@@ -17,9 +17,9 @@ public class Run {
 		
 		//다형성 적용 후
 		ElectronicController ec = new ElectronicController();
-		ec.insert(new Desktop("삼성","데탑",1500000,"지포스"),  0);
-		ec.insert(new NoteBook("엘지", "그램", 2000000,4),  1);
-		ec.insert(new Tablet("애플","아이패드",500000),  2);
+		ec.insert(new Desktop("삼성","데탑",1500000,"지포스"), 0);
+		ec.insert(new NoteBook("엘지", "그램", 2000000,4), 1);
+		ec.insert(new Tablet("애플","아이패드",500000), 2);
 		
 		System.out.println(ec.select(0));
 		System.out.println(ec.select(1));

@@ -8,7 +8,11 @@ public class Tablet extends Electeonic {
 		
 	}
 	public Tablet(String brand, String name, int price) {
+		super (brand, name, price);
 		
+	}
+	public String toString() {
+		return "Tablet [toString()=" + super.toString() + "]";
 	}
 
 }

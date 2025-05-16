@@ -1,7 +1,7 @@
 package com.kh.Practice1;
 
 interface StringChecker{
-	boolean check(String s);
+	boolean check(String str);
 }
 
 public class LamdaPractice1 {

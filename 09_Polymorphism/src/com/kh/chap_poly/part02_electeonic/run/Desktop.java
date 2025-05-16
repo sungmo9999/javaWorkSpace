@@ -20,6 +20,10 @@ public class Desktop extends Electeonic {
 	public void setGraphic(String graphic) {
 		this.graphic = graphic;
 	}
+	@Override
+	public String toString() {
+		return "Desktop [graphic=" + graphic + "]";
+	}
 	
 
 }

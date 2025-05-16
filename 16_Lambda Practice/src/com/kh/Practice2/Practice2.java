@@ -8,5 +8,10 @@ public class Practice2 {
 		         System.out.println(adder.operate(10, 20));         // 30 
 		         System.out.println(combiner.operate("hello", "world")); // hello-world  
 		}
+	@FunctionalInterface
+	interface Calculator<T>{
+		T operate(T t1, T t2);
+		
+	}
 
 }

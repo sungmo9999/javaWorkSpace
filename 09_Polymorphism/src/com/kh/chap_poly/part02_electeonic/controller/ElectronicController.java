@@ -10,7 +10,7 @@ public class ElectronicController {
 	private Desktop desk;
 	private NoteBook note;
 	private Tablet tab;
-	public char[] selectTablet;
+	public Electeonic[] elec = new Electeonic[3]; 
 	
 	//제품입고 메서드
 	//다양성 적용전
@@ -34,7 +34,9 @@ public class ElectronicController {
 	public Tablet selectTablet() {
 		return tab;
 	}
-	public void insert
+	public void insert(Electeonic e , int index) {
+		elec[index] = e;
+	}
 	public Electeonic select(int index) {
 		return elec[index];
 	}

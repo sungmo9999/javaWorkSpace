@@ -8,5 +8,8 @@ public class Practice4 {
 		        printer.accept("홍길동", 95); 
 		        printer.accept("이순신", 88); 
 		    }
+	interface MyFunction2<K,A>{
+		void accept(K k, A a);
+	}
 
 }

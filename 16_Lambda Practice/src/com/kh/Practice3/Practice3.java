@@ -8,5 +8,8 @@ public class Practice3 {
 	        System.out.println(intToString.apply(42));       // Value: 42 
 	        System.out.println(strToLength.apply("lambda")); // 6 
 	    }
+	 interface MyFunction<V, B>{
+		 B apply(V v);
+	 }
 
 }
