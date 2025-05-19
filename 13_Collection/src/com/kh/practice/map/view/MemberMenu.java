@@ -95,6 +95,21 @@ public class MemberMenu {
 		
 	}
 	public void login() {
+		System.out.print("아이디 : ");
+		String id =  sc.nextLine();
+		
+		System.out.println("비밀번호 : ");
+		String pssword = sc.nextLine();
+		
+		String name = mc.logIn(id, pssword);
+		if(name != null) {
+			System.out.println(name+"님 환영합니다.");
+			
+		}else {
+			System.out.println("틀린 아이디 또는 비밀번호입니다.");
+			logIn();
+		}
+		
 		
 	}
 	public void changePassword() {

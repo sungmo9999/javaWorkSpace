@@ -103,10 +103,8 @@ public class ScoreMenu {
 	}
 		
 	}
-	public DataInputStream readScore() throws FileNotFoundException {
-		DataOutputStream ds = new DataOutputStream(new FileOutputStream("score.txt"));
-		
+	
 
 }
-}
+
 

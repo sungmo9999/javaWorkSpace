@@ -28,6 +28,8 @@ public class ScoreDAO {
 	}
 
 	public DataInputStream readScore() throws FileNotFoundException {
+		DataInputStream ds = new DataInputStream(new FileInputStream("score.txt"));
+		return ds;
 		
 	}
 

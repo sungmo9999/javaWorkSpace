@@ -73,9 +73,14 @@ public class BookMenu {
 	public void selectList() {
 		ArrayList<Book> bookList = bc.selectList();
 		
-		if(booklist.isEmpty()) {
+		if(bookList.isEmpty()) {
 			System.out.println("존재하는도서x");
 			return;
+			
+		}
+		for(Book b : bookList) {
+			System.out.println(b);
+			
 		}
 		
 		

@@ -2,6 +2,7 @@ package com.kh.practice.list.library.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import com.kh.practice.list.library.model.vo.Book;
@@ -55,8 +56,9 @@ public class BookController {
 		
 	}
 	public int ascBook() {
-		Collection.sort(bookList);
-		
+		Collections.sort(bookList);
+		return 1;
+ 		
 	}
 
 }

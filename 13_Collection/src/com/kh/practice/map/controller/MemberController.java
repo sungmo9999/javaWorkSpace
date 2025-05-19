@@ -9,9 +9,17 @@ public class MemberController {
 	private HashMap<String ,Member> map = new HashMap();
 	
 	public boolean joinMembership(String id, Member m) {
+		if(map.containsKey(id)) {
+			return false;
+		}
+		map.put(id, m);
+		return true;
+		
 		
 	}
 	public boolean logIn(String id, String password){
+		if(map.containsKey(id) && map.)
+		
 		
 	}
 	public boolean changePassword(String id, String oldPw, String newPw){
