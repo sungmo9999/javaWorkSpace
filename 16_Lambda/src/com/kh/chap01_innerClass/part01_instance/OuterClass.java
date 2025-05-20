@@ -2,7 +2,7 @@ package com.kh.chap01_innerClass.part01_instance;
 
 public class OuterClass {
 	
-	private String str = "외부클래스 필드";
+	final private String str = "외부클래스 필드";
 	private static String staticStr = "외부클래스 스테틱 필드";
 	private InnerClass inner;
 	
